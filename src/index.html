@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body class="backgr">
+  <main>
+    <!-- Spinner -->
+    <div class="preloader">
+      <div class="spinner-grow text-primary">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <div class="titleDiv">
+      <h1 class="titleFormat">
+        Welcome ! lets see how many points you get
+      </h1>
+      <h2 class="titleFormat">
+        Have fun! there are 15 questions. 10 points for each correct answer
+      </h2>
+    </div>
+    <div class="titleDiv questionDiv questionFormat">
+      <div class="titleFormat">
+        <p id="question">This is an example question</p>
+      </div>
+      <div class="optionsFormat" id="options">
+        <input type="radio" name="option" id="op1" />
+        <label for="op1" id="opLbl1">These are options</label>
+      </div>
+      <div class="optionsFormat" id="options">
+        <input type="radio" name="option" id="op2" />
+        <label for="op2" id="opLbl2">These are options</label>
+      </div>
+      <div class="optionsFormat" id="options">
+        <input type="radio" name="option" id="op3" />
+        <label for="op3" id="opLbl3">These are options</label>
+      </div>
+      <div>
+        <button class="buttonFormat button" id="btnNext">Next</button>
+      </div>
+    </div>
+    <div class="questionDiv titleFormat scoreFormat">
+      <p>Score: <span id="score">0</span> points</p>
+    </div>
+    <div class="questionDiv titleFormat scoreFormat">
+      <p>Set your name to save your score</p>
+      <p><input type="text" name="inputName" id="inputName">
+        <button class="buttonFormat button" id="btnSetName">Confirm</button>
+      </p>
+    </div>
+
+    <div class="questionDiv titleFormat scoreFormat">
+      <p>Click to reset your data and start from scratch
+        <button class="buttonFormat button" id="btnClearData">Clear data</button>
+      </p>
+    </div>
+
+    <div class="questionDiv questionFormat">
+      <p class="titleFormat" id="leaderboard">
+
+
+      </p>
+    </div>
+  </main>
+
+  <script src="./assets/scripts/spinner.js"></script>
+  <script src="./assets/scripts/game.js"></script>
+</body>
+
+</html>

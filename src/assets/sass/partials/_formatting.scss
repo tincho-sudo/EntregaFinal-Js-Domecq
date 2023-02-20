@@ -1,0 +1,27 @@
+.titleFormat {
+  color: white;
+  font-size: x-large;
+}
+
+.optionsFormat {
+  color: white;
+  justify-content: left;
+  align-items: left;
+}
+
+.buttonFormat {
+  height: auto;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000;
+  border-color: white;
+}
+
+.questionFormat {
+  border-color: #ff0000;
+}
+
+.scoreFormat {
+  border-color: red;
+}
