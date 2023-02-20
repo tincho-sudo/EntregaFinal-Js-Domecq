@@ -11,3 +11,26 @@ Configuraciones posibles:
   Puerto. Se encuentra el puerto seteado en el archivo dotEnv, al cual toma como priodidad, pero como seguridad tambien se aplica en 2do nivel el asignado a process.env y por ultimo un 3000 seteado.
 
   URI MongoDB. Se modifica en el archivo dotEnv para conectar con la base de datos de mongo.
+
+
+Librerias utilizadas:
+
+  - Cors: Para el fetch de datos entre cliente/servidor
+  - Express: Servidor
+  - Fs: Interacciones con archivos, especificamente en este caso manipulacion de archivo .json
+  - Mongoose: Interaccion/conexion con Mongo
+  
+ Como devDependencies:
+ 
+  - dotEnv: Configuraciones de la API
+  - nodemon: Reset automatico de la api al modificar un archivo y guardarlo.
+  - prettier: Indenting/Formatting
+
+
+Scripts disponibles por defecto:
+
+  "scripts": {
+      "start": "node index.js",
+      "dev": "npx nodemon index.js",
+     "format": "prettier --write ."
+    },
